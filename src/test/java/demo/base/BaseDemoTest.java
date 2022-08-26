@@ -21,4 +21,10 @@ public class BaseDemoTest {
         assertEquals(4, baseDemo.sum(2,2));
         assertEquals(10, baseDemo.sum(5,5));
     }
+    @Test
+    public void sum_of_negative_and_positive(){
+        BaseDemo baseDemo = new BaseDemo();
+        assertEquals(-5, baseDemo.sum(-10,5));
+        assertEquals(5, baseDemo.sum(10,-5));
+    }
 }
